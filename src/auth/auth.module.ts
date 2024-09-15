@@ -11,7 +11,7 @@ import { envs } from 'src/config';
     JwtModule.register({
       global: true,
       secret: envs.JWT_SECRET,
-      signOptions: { expiresIn: '30s' },
+      signOptions: { expiresIn: '1h' },
     }),
   ],
 })
