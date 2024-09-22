@@ -77,3 +77,11 @@ Nest is [MIT licensed](LICENSE).
 ```
 npx prisma generate
 ```
+
+## PROD
+
+Ejecutar:
+
+```
+ docker build -f Dockerfile.prod -t client-gateway .
+```
