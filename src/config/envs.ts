@@ -17,7 +17,7 @@ const envsScheme = joi
 
 const { error, value } = envsScheme.validate({
   ...process.env,
-  NATS_SERVERS: process.env.NATS_SERVERS.split(','),
+  NATS_SERVERS: process.env.NATS_SERVERS?.split(','),
 });
 
 if (error) {
